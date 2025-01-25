@@ -1,0 +1,121 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.login-style{
+  width: 100vw;
+  height: 100vh;
+  border-radius:5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+ background-color: #0093E9;
+  background-image: linear-gradient(61deg, #0093E9 1%, #000000 95%);
+  
+
+}
+.card-login {
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.137) !important;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   height: 90%; 
+   width: 40%; 
+   max-width: 600px;
+   max-height: 800px;
+   box-sizing: border-box;/*Nos permite que tenga un border en nuestro modo*/
+}
+@media (max-width: 768px) {
+  .card-login {
+    width: 80%;
+    height: auto;
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .imgStyleLogo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .card-login > * {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-login {
+    width: 90%;
+    height: auto;
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .imgStyleLogo {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Teléfonos móviles pequeños */
+@media (max-width: 360px) {
+  .card-login {
+    width: 95%;
+    height: auto;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .imgStyleLogo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .card-login > * {
+    width: 100%;
+  }
+}
+.styleNavbar{
+/*Logo style img*/
+background-color: #0093E9;
+background-image: linear-gradient(238deg, #0093E9 1%, #000000 95%);
+}
+/*Logo style img*/
+.imgStyleLogo{
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+}
+
+.menuStyle{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+/*Style Dashboard*/
+.dashboardStyle{
+  min-height: 80vh ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/***headerStyle***/
+.headerStyle{
+  width: 100%;
+  display: grid;
+  grid-template-columns:  0.3fr  1fr 100px;
+  gap: 16px;
+}
+
+.searchStyle{
+  width: 50%;
+  display:grid;
+  grid-template-columns:  minmax(100px, 2fr) 50px;/*Con esto le digo que min tendras 100px y max 2fr*/
+}
+
+/* Ajustes responsivos */

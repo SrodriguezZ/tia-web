@@ -1,0 +1,38 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 100vh;
+    grid-template-rows: 35px 1fr 100px;
+    grid-template-areas: 
+        "header header header"
+        "content content content"
+        "footer footer footer";
+}
+/*Podemos sacar query, lo cual no hay que sacar mucho y si es posible evitar */
+@media (width>400px) {
+    .container{
+        grid-template-areas: 
+        "header header ."
+        "sidebar content content"
+        "footer footer footer";
+    }
+}
+.header{
+    background: #09f;
+    grid-area: header;
+}
+
+.sdibar{
+    background: #3145;
+    grid-area: sidebar;
+}
+
+.content{
+    background: #444;
+    grid-area: content;
+}
+
+.footer{
+    background: #999;
+    grid-area: footer;
+}
